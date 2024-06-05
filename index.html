@@ -247,14 +247,18 @@
 
         const toggleButton = document.getElementById("mode-toggle");
         const body = document.body;
+        const logo = document.getElementById("mode-toggle");
 
         // Check local storage for mode preference
         const savedMode = localStorage.getItem("mode");
         if (savedMode) {
             body.classList.add(savedMode);
+            if (savedMode === "dark-mode") {
+                logo.src = "logodark.png";
+            } else {
+                logo.src = "large.png";
+            }
         }
-
-        const logo = document.getElementById("mode-toggle");
 
         toggleButton.addEventListener("click", function() {
             body.classList.toggle("dark-mode");
