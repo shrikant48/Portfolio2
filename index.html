@@ -225,52 +225,53 @@
         </div>
         
     </div>
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname, event) {
-            for (tablink of tablinks) {
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const tablinks = document.getElementsByClassName("tab-links");
+        const tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(event, tabname) {
+            Array.from(tablinks).forEach(tablink => {
                 tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
+            });
+            Array.from(tabcontents).forEach(tabcontent => {
                 tabcontent.classList.remove("active-tab");
-            }
+            });
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
-        document.addEventListener('DOMContentLoaded', function() {
-            const yearSpan = document.getElementById('year');
-            const currentYear = new Date().getFullYear();
-            yearSpan.textContent = currentYear;
-        });
-        document.addEventListener("DOMContentLoaded", function() {
-    const toggleButton = document.getElementById("mode-toggle");
-    const body = document.body;
 
-    // Check local storage for mode preference
-    const savedMode = localStorage.getItem("mode");
-    if (savedMode) {
-        body.classList.add(savedMode);
-    }
+        const yearSpan = document.getElementById('year');
+        const currentYear = new Date().getFullYear();
+        yearSpan.textContent = currentYear;
 
-    const logo = document.getElementById("mode-toggle");
+        const toggleButton = document.getElementById("mode-toggle");
+        const body = document.body;
 
-   
-    toggleButton.addEventListener("click", function() {
-        body.classList.toggle("dark-mode");
-        if (body.classList.contains("dark-mode")) {
-            localStorage.setItem("mode", "dark-mode");
-            logo.src = "logodark.png";
-        } else {
-            localStorage.removeItem("mode");
-            logo.src = "large.png";
+        // Check local storage for mode preference
+        const savedMode = localStorage.getItem("mode");
+        if (savedMode) {
+            body.classList.add(savedMode);
         }
+
+        const logo = document.getElementById("mode-toggle");
+
+        toggleButton.addEventListener("click", function() {
+            body.classList.toggle("dark-mode");
+            if (body.classList.contains("dark-mode")) {
+                localStorage.setItem("mode", "dark-mode");
+                logo.src = "logodark.png";
+            } else {
+                localStorage.removeItem("mode");
+                logo.src = "large.png";
+            }
+        });
     });
-});
 
+    // Make the opentab function globally accessible
+    window.opentab = opentab;
+</script>
 
-
-    </script>
 
 </body>
 <footer>
