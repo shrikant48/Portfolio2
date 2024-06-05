@@ -253,28 +253,31 @@
         const savedMode = localStorage.getItem("mode");
         if (savedMode) {
             body.classList.add(savedMode);
-            if (savedMode === "dark-mode") {
+            setLogoImage(savedMode);
+        } else {
+            setLogoImage("light-mode"); // Default to light mode image
+        }
+
+        toggleButton.addEventListener("click", function() {
+            body.classList.toggle("dark-mode");
+            const mode = body.classList.contains("dark-mode") ? "dark-mode" : "light-mode";
+            localStorage.setItem("mode", mode);
+            setLogoImage(mode);
+        });
+
+        function setLogoImage(mode) {
+            if (mode === "dark-mode") {
                 logo.src = "logodark.png";
             } else {
                 logo.src = "large.png";
             }
         }
-
-        toggleButton.addEventListener("click", function() {
-            body.classList.toggle("dark-mode");
-            if (body.classList.contains("dark-mode")) {
-                localStorage.setItem("mode", "dark-mode");
-                logo.src = "logodark.png";
-            } else {
-                localStorage.removeItem("mode");
-                logo.src = "large.png";
-            }
-        });
     });
 
     // Make the opentab function globally accessible
     window.opentab = opentab;
 </script>
+
 
 
 </body>
