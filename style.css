@@ -493,20 +493,3 @@ footer a:hover {
     text-decoration: underline;
 }
 /*----------------
-
-
-/* Ensure the video fills the viewport */
-#background-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1; /* Make sure the video is behind other content */
-    background: url('path/to/your/fallback-image.jpg') no-repeat;
-    background-size: cover;
-}
-
-/* Style for the content on top of the video */
