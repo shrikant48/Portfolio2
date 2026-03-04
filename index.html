@@ -1,416 +1,838 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale-1.0">
-    <title>Shrikant's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/442f1b28bf.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <div id="header">
-        <div class="containt">
-            <nav>
-                <img src="large.png" class="logo" id="mode-toggle" alt="Toggle Image" onclick="toggleImage()">
-                <ul>
-                    <li><a href="#header" class="haspc">Home</a></li>
-                    <li><a href="#about" class="haspc">About</a></li>
-                    <li><a href="#services" class="haspc">Services</a></li>
-                    <li><a href="#portfolio" class="haspc">Portfolio</a></li>
-                    <li><a href="#contact" class="haspc">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
-                <h1>Hi,<br> I'm <span class="hov">Shrikant</span> Deshmukh.</h1>
-                <p><br></p>
-                <p>a Software Developer</p>
-
-                <a href="Shri_resume.pdf" download class="btn btn2 hover-over">Download CV</a>
-
-                <br>
-            </div>
-
-            <p id="small"><span>A</span>s a devoted fourth-year Computer Science Engineering student, I've diligently
-                cultivated my expertise in data structures and algorithms. Leveraging my robust understanding of web
-                development, I've embarked on creating several innovative projects. Now, brimming with enthusiasm and
-                armed with a wealth of skills, I stand poised to unveil my passion and proficiency in technology to the
-                world.</p>
-            <br>
-            <br>
-            <p class="hover-effect-fun"><i>Fun Fact: I Love playing <span>Football</span> </i>:<span>)</span></p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <p>Use top left corner <span>"SHRI"</span> logo to toggle dark.light mode!</p>
-        </div>
-
-    </div>
-    <!---------------About--------------->
-    <div id="about">
-        <div class="containt">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="shri2.jpg">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title hover-effect hover-effect">About Me</h1><br>
-                    <p>Hello! <br>Welcome to my portfolio! I'm a software developer proficient in Java, C++, and
-                        well-versed
-                        in data
-                        structures and algorithms, also my expertise extends to web development using HTML and CSS. With
-                        a
-                        quick-learning mindset and a knack for teamwork, I excel in delivering top-notch results.
-                        Explore my portfolio to see how my skills can contribute to your projects. Feel free to reach me
-                        out. <br>Thank you!</p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills &nbsp;<i
-                                class="fa-solid fa-kitchen-set" style="color: #434242;"></i></p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience &nbsp;<i
-                                class="fa-solid fa-briefcase" style="color: #434242;"></i></p>
-                        <p class="tab-links" onclick="opentab('education')">Education&nbsp;<i class="fa-solid fa-school"
-                                style="color: #434242;"></i></p>
-                    </div>
-                    <div class="tab-contents active-tab hover-effect" id="skills">
-
-                        <table border="1">
-                            <td>
-                                <ul>
-                                    <li><span>
-                                            <h3>Programming Languages</h3>
-                                        </span><br> </li>
-                                    <li>Java<br></li>
-                                    <li>C++<br></li>
-                                    <li>HTML5<br></li>
-                                    <li>CSS<br></li>
-                                    <li>JavaScript<br></li>
-                                    <li>Python-learning<br></li>
-                                    <li>PHP-learning<br></li>
-
-                                </ul>
-                            </td>
-                            <td>
-                                <ul>
-                                    <li><span>
-                                            <h3>Data Structure</h3>
-                                        </span><br> </li>
-                                    <li>Data Structures and Algorithms<br></li>
-                                    <li>Object Oriented Programming<br></li>
-
-                                </ul>
-                            </td>
-                            <td>
-                                <ul>
-                                    <li><span>
-                                            <h3>Technologies</h3>
-                                        </span><br> </li>
-                                    <li>Git<br></li>
-                                    <li>VS Code<br></li>
-                                    <li>PyCharm<br></li>
-                                    <li>Bootstrap<br></li>
-                                    <li>Continuous Integration and Continuous Deployment (CI/CD)<br></li>
-                                    <li>AWS<br></li>
-                                    <li>My Sql<br></li>
-
-                                </ul>
-                            </td>
-                            <td>
-                                <ul>
-                                    <li><span>
-                                            <h3>Version Control</h3>
-                                        </span><br> </li>
-                                    <li>Git<br></li>
-                                    <li>Git Hub<br></li>
-
-                                </ul>
-                            </td>
-                            <td>
-                                <ul>
-                                    <li><span>
-                                            <h3>Tools and Software</h3>
-                                        </span><br> </li>
-                                    <li>Microsoft Excel<br></li>
-                                    <li> Microsoft PowerPoint<br></li>
-                                    <li> Microsoft Power<br></li>
-                                    <li>BI<br></li>
-                                    <li>Tableau<br></li>
-                                    <li> Buildozer<br></li>
-
-                                </ul>
-                            </td>
-                            <td>
-                                <ul>
-                                    <li><span>
-                                            <h3>Operating Systeams</h3>
-                                        </span><br> </li>
-                                    <li>Windows<br></li>
-                                    <li>VS Code<br></li>
-
-
-                                </ul>
-                            </td>
-
-                        </table>
-
-
-                    </div>
-                    <div class="tab-contents hover-effect" id="experience">
-                        <ul>
-                            <table border="1">
-                                <td>
-                                    <li><span>Software Developer</span><br>Software Developer intern at MotionCut, I
-                                        successfully delivered projects such as an
-                                        Expense Tracker, Link Shortener, and Game
-                                        within one month. <br>
-                                        GitHub: github.com/shrikant48/MotionCut</li>
-                                </td>
-
-                                <td>
-                                    <li><span>Web Developer</span><br>Web Developer inter at CodSoft, I have created
-                                        dynamics websites adn worked on live projects. <br>
-                                        GitHub: github.com/shrikant48/CodSoft.git
-                                    </li>
-                                </td>
-
-                            </table>
-
-                        </ul>
-                    </div>
-                    <div class="tab-contents hover-effect" id="education">
-                        <ul>
-                            <table border="1">
-                                <tr>
-                                    <li><span>BE (Computer Science)</span><br>&nbsp;Indira College of Engineering and
-                                        Management
-                                        (SPPU) <br>&nbsp;Score: --<br>&nbsp;Currently Studying</li>
-                                </tr>
-                                <tr>
-                                    <li><span>XII (Science)</span><br>&nbsp;Modern College of Commerce, Science and Arts
-                                        (SPPU)<br>&nbsp;Score: 84.33%<br>&nbsp;2020 </li>
-                                </tr>
-                                <tr>
-                                    <li><span>X (Secondry)</span><br>&nbsp;Biyani Military School &nbsp;(Nashik
-                                        Div)<br>&nbsp;Score: 86.20%<br>&nbsp;2018</li>
-                                </tr>
-
-                            </table>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--------------------Services----------------->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title hover-effect">My Services</h1>
-            <div class="services-list" style="padding-left: 5%; padding-right: 5%;">
-                <div>
-                    <h2 class="hover-effect">Software Developer &nbsp;&nbsp; <i class="fa-brands fa-uncharted fa-xl"
-                            style="color: #b3b3b3;"></i></h2><br>
-                    <p>As a passionate software developer, I bring a dynamic blend of creativity and technical expertise
-                        to the world of coding. I specialize in crafting innovative solutions to complex problems. My
-                        proficiency
-                        I am dedicated to producing high-quality, scalable software that
-                        not only meets client needs but also reflects my commitment to clean, efficient code. Beyond the
-                        technical realm, my collaborative mindset and effective communication skills enable me to
-                        seamlessly integrate into cross-functional teams.</p>
-                    <a href="#">learn more</a>
-                </div>
-                <div>
-                    <h2 class="hover-effect">Web Developer &nbsp;&nbsp;<i class="fa-solid fa-code fa-xl"
-                            style="color: #b3b3b3;"></i></h2>
-                    <br>
-                    <p>As a dedicated web developer, Armed with a strong foundation in front-end
-                        technologies, I thrive on creating visually appealing and seamlessly functional websites. With
-                        expertise in HTML, CSS, JavaScript, and various web frameworks, My passion for staying abreast
-                        of
-                        the latest web development trends ensures that I deliver modern and innovative solutions.
-                        Collaborative by nature, I enjoy working with cross-functional teams, leveraging effective
-                        communication skills to bring digital visions to life. Whether it's crafting elegant user
-                        experiences or optimizing website performance.</p>
-                    <a href="#">learn more</a>
-                </div>
-                <!--<div>
-                    <h2>Software Engineer &nbsp;&nbsp; <i class="fa-solid fa-computer fa-xl"
-                            style="color: #b3b3b3;"></i></i></h2><br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ea tempore quaerat ut corrupti,
-                        error cupiditate sed quod magnam nisi nesciunt quis voluptas laborum, vel qui saepe vero,
-                        obcaecati delectus.</p>
-                    <a href="#">learn more</a>
-                </div>-->
-            </div>
-        </div>
-    </div>
-    <!-----------------My Work----------------->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title hover-effect">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="port.PNG">
-                    <div class="layer">
-                        <h3 class=" hover-effect">Personal Portfolio Website</h3>
-                        <p>The Personal Portfolio Website tells about my all proffessional details skills and work, You
-                            can know more about me and can contact me. </p>
-                        <a
-                            href="https://github.com/shrikant48/CodSoft/tree/main/Personal%20Portfolio%20Website/Personal-Portfolio-Website"><i
-                                class="fa-solid fa-arrow-up-right-from-square fa-xl"
-                                style="color: #403f3f;"></i></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="TOURISTAS.PNG">
-                    <div class="layer">
-                        <h3 class=" hover-effect">Toureasta</h3>
-                        <p>Toureasta, derived from 'tourist' and 'easy,' is a comprehensive project designed to
-                            facilitate effortless global travel. It features weather updates, vacation planning tools,
-                            currency conversion, hotel search capabilities, note-taking functionality, language
-                            translation, and expense tracking. </p>
-                        <a href="https://shrikant48.github.io/Toureasta/"><i
-                                class="fa-solid fa-arrow-up-right-from-square fa-xl"
-                                style="color: #403f3f;"></i></i></a>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="work-list">
-                <div class="work">
-                    <img src="ttt.PNG">
-                    <div class="layer">
-                        <h3 class=" hover-effect">Tik Tak Toe</h3>
-                        <p>Build a responsive Tik Tak Toe Game.</p>
-                        <a href="https://shrikant48.github.io/Tik-Tak-Toe/"><i
-                                class="fa-solid fa-arrow-up-right-from-square fa-xl"
-                                style="color: #403f3f;"></i></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="land.PNG">
-                    <div class="layer">
-                        <h3 class=" hover-effect">GODGYM Lannding Page</h3>
-                        <p>The Landing Page for GODGYM GYM that tell us about everything its timing prices and
-                            structure, etc.</p>
-                        <a href="https://shrikant48.github.io/Gym-Landing-Page/"><i
-                                class="fa-solid fa-arrow-up-right-from-square fa-xl"
-                                style="color: #403f3f;"></i></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="currimg.PNG">
-                    <div class="layer">
-                        <h3 class=" hover-effect">Currency Converter</h3>
-                        <p>Build a responsive Currency Converter website that supports over 158 countries.</p>
-                        <a href="https://shrikant48.github.io/Currency-Converter/"><i
-                                class="fa-solid fa-arrow-up-right-from-square fa-xl"
-                                style="color: #403f3f;"></i></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href="https://github.com/shrikant48" class="btn hover-effect">See more</a>
-        </div>
-    </div>
-    <!-------------------Contact------------------>
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title hover-effect">Contact Me</h1>
-                    <p><i class="fa-solid fa-envelope fa-lg"></i> shreed2002@gmail.com</p>
-                    <p><i class="fa-solid fa-phone fa-lg"></i> (+91) 8080250276</p>
-                    <div class="social-icons"><br>
-                        <p><i>
-                                <h2 class="hover-effect" style="color: #ff004f;">lets connect:</h2>
-                            </i></p>
-                        <a
-                            href="https://www.linkedin.com/in/deshmukhshrikant?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
-                                class="fa-brands fa-linkedin fa-xl hover-effect"></i></a>&nbsp&nbsp
-                        <a href="https://www.instagram.com/deshmukhsofficial?igshid=YzAwZjE1ZTI0Zg=="><i
-                                class="fa-brands fa-instagram fa-xl hover-effect"></i></a>&nbsp&nbsp
-                        <a href="https://x.com/SHRID48?t=5alDgN4KfkbbNoLJz4blBg&s=09"><i
-                                class="fa-brands fa-x-twitter fa-xl hover-effect"></i></a>&nbsp&nbsp
-                        <a href="https://www.threads.net/@deshmukhsofficial"><i
-                                class="fa-brands fa-threads fa-xl hover-effect"></i></a>
-                    </div>
-                    <p><i>
-                            <h2 class="hover-effect" style="color: #ff004f;">get in touch:</h2>
-                        </i></p>
-                </div>
-                <div class="contact-right   "></div>
-                <form action="/submit" method="post">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2 hover-effect">Submit</button>
-                </form>
-            </div>
-        </div>
-
-    </div>
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrikant Deshmukh — Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        :root {
+            --red: #ff004f;
+            --red-dim: rgba(255,0,79,0.12);
+            --bg: #09090b;
+            --bg2: #111113;
+            --bg3: #18181b;
+            --surface: #1c1c1f;
+            --border: rgba(255,255,255,0.07);
+            --text: #e4e4e7;
+            --muted: #71717a;
+            --white: #ffffff;
         }
-        document.addEventListener('DOMContentLoaded', function () {
-            const yearSpan = document.getElementById('year');
-            const currentYear = new Date().getFullYear();
-            yearSpan.textContent = currentYear;
 
-            const toggleButton = document.getElementById("mode-toggle");
-            const body = document.body;
-            const logo = document.getElementById("mode-toggle");
+        *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
 
-            // Check local storage for mode preference
-            const savedMode = localStorage.getItem("mode");
-            if (savedMode) {
-                body.classList.add(savedMode);
-                setLogoImage(savedMode);
-            } else {
-                setLogoImage("light-mode"); // Default to light mode image
-            }
+        html { scroll-behavior: smooth; font-size: 16px; }
 
-            toggleButton.addEventListener("click", function () {
-                body.classList.toggle("dark-mode");
-                const mode = body.classList.contains("dark-mode") ? "dark-mode" : "light-mode";
-                localStorage.setItem("mode", mode);
-                setLogoImage(mode);
-            });
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 300;
+            overflow-x: hidden;
+            cursor: none;
+        }
 
-            function setLogoImage(mode) {
-                if (mode === "dark-mode") {
-                    logo.src = "logodark.PNG";
-                } else {
-                    logo.src = "large.png";
-                }
-            }
-        });
+        /* ── Custom cursor ── */
+        .cursor { position:fixed; width:10px; height:10px; background:var(--red); border-radius:50%; pointer-events:none; z-index:9999; transform:translate(-50%,-50%); transition:transform 0.1s; }
+        .cursor-ring { position:fixed; width:36px; height:36px; border:1.5px solid rgba(255,0,79,0.5); border-radius:50%; pointer-events:none; z-index:9998; transform:translate(-50%,-50%); transition:all 0.18s ease; }
 
-        // Make the opentab function globally accessible
-        window.opentab = opentab;
-    </script>
+        /* ── Noise overlay ── */
+        body::before {
+            content:'';
+            position:fixed; inset:0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+            opacity: 0.4; pointer-events:none; z-index:0;
+        }
 
+        /* ── Nav ── */
+        nav {
+            position:fixed; top:0; left:0; right:0; z-index:100;
+            display:flex; align-items:center; justify-content:space-between;
+            padding: 22px 6%;
+            backdrop-filter: blur(20px);
+            background: rgba(9,9,11,0.7);
+            border-bottom: 1px solid var(--border);
+        }
 
+        .nav-logo {
+            font-family: 'Syne', sans-serif;
+            font-weight: 800; font-size: 1.3rem;
+            color: var(--white);
+            letter-spacing: -0.03em;
+        }
+        .nav-logo span { color: var(--red); }
 
-</body>
+        nav ul { display:flex; gap:36px; list-style:none; }
+        nav ul a {
+            color: var(--muted); font-size: 0.9rem; text-decoration:none;
+            font-weight: 400; letter-spacing: 0.05em; text-transform: uppercase;
+            transition: color 0.25s;
+        }
+        nav ul a:hover { color: var(--white); }
+
+        /* ── Hero ── */
+        #hero {
+            min-height: 100vh;
+            display: flex; align-items: center;
+            padding: 120px 6% 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-grid-bg {
+            position:absolute; inset:0;
+            background-image:
+                linear-gradient(rgba(255,0,79,0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,0,79,0.04) 1px, transparent 1px);
+            background-size: 60px 60px;
+            mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, black 30%, transparent 100%);
+        }
+
+        .hero-glow {
+            position:absolute; top:-200px; right:-100px;
+            width: 700px; height: 700px;
+            background: radial-gradient(circle, rgba(255,0,79,0.15) 0%, transparent 70%);
+            pointer-events:none;
+        }
+
+        .hero-content { position:relative; z-index:1; max-width: 900px; }
+
+        .hero-badge {
+            display: inline-flex; align-items:center; gap:8px;
+            background: var(--red-dim); border: 1px solid rgba(255,0,79,0.3);
+            color: var(--red); border-radius: 100px;
+            padding: 6px 16px; font-size: 0.8rem; font-weight: 500;
+            letter-spacing: 0.08em; text-transform:uppercase;
+            margin-bottom: 32px;
+            animation: fadeUp 0.6s ease both;
+        }
+
+        .hero-badge::before { content:''; width:6px; height:6px; background:var(--red); border-radius:50%; animation: pulse 2s infinite; }
+
+        @keyframes pulse { 0%,100%{opacity:1; transform:scale(1)} 50%{opacity:0.5; transform:scale(1.4)} }
+
+        .hero-name {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(3.5rem, 8vw, 7rem);
+            font-weight: 800;
+            line-height: 0.95;
+            letter-spacing: -0.04em;
+            color: var(--white);
+            animation: fadeUp 0.6s 0.1s ease both;
+        }
+        .hero-name .red { color: var(--red); }
+
+        .hero-sub {
+            margin-top: 28px;
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            color: var(--muted); font-weight: 300; max-width: 560px; line-height: 1.7;
+            animation: fadeUp 0.6s 0.2s ease both;
+        }
+
+        .hero-actions {
+            display:flex; gap:16px; margin-top: 44px; flex-wrap:wrap;
+            animation: fadeUp 0.6s 0.3s ease both;
+        }
+
+        .btn-primary {
+            display:inline-flex; align-items:center; gap:10px;
+            background: var(--red); color:#fff;
+            padding: 14px 32px; border-radius: 6px;
+            text-decoration:none; font-weight:500; font-size:0.95rem;
+            transition: all 0.3s; border:none; cursor:none;
+        }
+        .btn-primary:hover { background:#d90042; transform:translateY(-2px); box-shadow:0 12px 40px rgba(255,0,79,0.35); }
+
+        .btn-secondary {
+            display:inline-flex; align-items:center; gap:10px;
+            background: transparent; color: var(--text);
+            padding: 14px 32px; border-radius: 6px;
+            text-decoration:none; font-weight:500; font-size:0.95rem;
+            border: 1px solid var(--border);
+            transition: all 0.3s; cursor:none;
+        }
+        .btn-secondary:hover { border-color: rgba(255,255,255,0.3); background: var(--surface); transform:translateY(-2px); }
+
+        .hero-stats {
+            display:flex; gap:48px; margin-top: 64px;
+            animation: fadeUp 0.6s 0.4s ease both;
+        }
+        .stat-num {
+            font-family: 'Syne', sans-serif;
+            font-size: 2.2rem; font-weight: 800; color: var(--white);
+        }
+        .stat-num span { color: var(--red); }
+        .stat-label { font-size: 0.8rem; color: var(--muted); text-transform:uppercase; letter-spacing:0.08em; margin-top:4px; }
+
+        .hero-scroll {
+            position:absolute; bottom:40px; left:50%; transform:translateX(-50%);
+            display:flex; flex-direction:column; align-items:center; gap:8px;
+            color: var(--muted); font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase;
+            animation: fadeIn 1s 1s both;
+        }
+        .scroll-line { width:1px; height:50px; background: linear-gradient(to bottom, var(--red), transparent); animation: scrollLine 2s ease-in-out infinite; }
+        @keyframes scrollLine { 0%{transform:scaleY(0); transform-origin:top} 50%{transform:scaleY(1); transform-origin:top} 51%{transform-origin:bottom} 100%{transform:scaleY(0); transform-origin:bottom} }
+
+        @keyframes fadeUp { from{opacity:0; transform:translateY(24px)} to{opacity:1; transform:translateY(0)} }
+        @keyframes fadeIn { from{opacity:0} to{opacity:1} }
+
+        /* ── Section wrapper ── */
+        section { padding: 100px 6%; position:relative; }
+        .section-tag {
+            font-size: 0.75rem; font-weight: 500; letter-spacing: 0.15em;
+            text-transform:uppercase; color: var(--red);
+            display:flex; align-items:center; gap:12px; margin-bottom: 16px;
+        }
+        .section-tag::before { content:''; width:32px; height:1px; background:var(--red); }
+        .section-title {
+            font-family:'Syne', sans-serif; font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800; color: var(--white); letter-spacing:-0.03em; line-height:1.1;
+            margin-bottom: 56px;
+        }
+
+        /* ── About ── */
+        #about { background: var(--bg2); }
+        .about-grid {
+            display:grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items:center;
+        }
+        .about-img-wrap {
+            position:relative;
+        }
+        .about-img-wrap img {
+            width:100%; border-radius: 12px; filter: grayscale(20%);
+            display:block;
+        }
+        .about-img-wrap::after {
+            content:''; position:absolute; inset:0; border-radius:12px;
+            border: 2px solid transparent;
+            background: linear-gradient(135deg, rgba(255,0,79,0.4), transparent) border-box;
+            -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: destination-out; mask-composite: exclude;
+        }
+        .about-tag-float {
+            position:absolute; bottom:-20px; right:-20px;
+            background: var(--red); color:#fff; padding:16px 24px; border-radius:8px;
+            font-family:'Syne',sans-serif; font-weight:800; font-size:1.1rem;
+        }
+        .about-tag-float small { display:block; font-size:0.7rem; font-weight:400; opacity:0.8; }
+
+        .about-text p { color: var(--muted); line-height: 1.9; font-size:1.05rem; margin-bottom:24px; }
+
+        .skills-grid {
+            display:grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top:32px;
+        }
+        .skill-pill {
+            background: var(--surface); border: 1px solid var(--border);
+            border-radius:8px; padding:12px 16px;
+            display:flex; align-items:center; gap:10px;
+            font-size:0.875rem; color: var(--text);
+            transition: all 0.25s;
+        }
+        .skill-pill:hover { border-color: rgba(255,0,79,0.4); background: var(--red-dim); color:var(--white); }
+        .skill-pill i { color: var(--red); width:16px; text-align:center; }
+
+        /* ── Experience ── */
+        #experience { background: var(--bg); }
+        .exp-timeline { position:relative; padding-left: 32px; }
+        .exp-timeline::before {
+            content:''; position:absolute; left:0; top:8px; bottom:8px;
+            width:2px; background: linear-gradient(to bottom, var(--red), transparent);
+        }
+        .exp-item {
+            position:relative; margin-bottom:52px;
+        }
+        .exp-item::before {
+            content:''; position:absolute; left:-40px; top:6px;
+            width:16px; height:16px; border-radius:50%;
+            border: 2px solid var(--red); background: var(--bg);
+        }
+        .exp-item.active::before { background: var(--red); box-shadow: 0 0 16px rgba(255,0,79,0.5); }
+
+        .exp-period {
+            font-size:0.78rem; font-weight:500; color: var(--red);
+            text-transform:uppercase; letter-spacing:0.1em; margin-bottom:8px;
+        }
+        .exp-role {
+            font-family:'Syne',sans-serif; font-size:1.4rem; font-weight:700; color:var(--white); margin-bottom:4px;
+        }
+        .exp-company { color: var(--muted); font-size:0.95rem; margin-bottom:20px; }
+        .exp-points { list-style:none; }
+        .exp-points li {
+            color: var(--muted); font-size:0.95rem; line-height:1.7; padding:6px 0;
+            display:flex; gap:12px; align-items:flex-start;
+        }
+        .exp-points li::before { content:'→'; color:var(--red); flex-shrink:0; margin-top:1px; }
+
+        /* ── Projects ── */
+        #projects { background: var(--bg2); }
+        .projects-grid {
+            display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:24px;
+        }
+        .project-card {
+            background: var(--bg3); border: 1px solid var(--border); border-radius:16px;
+            padding: 32px; position:relative; overflow:hidden;
+            transition: all 0.35s; cursor:none;
+            display:flex; flex-direction:column;
+        }
+        .project-card::before {
+            content:''; position:absolute; inset:0; border-radius:16px;
+            background: radial-gradient(circle at top left, rgba(255,0,79,0.08), transparent 60%);
+            opacity:0; transition:opacity 0.35s;
+        }
+        .project-card:hover { border-color: rgba(255,0,79,0.3); transform:translateY(-6px); box-shadow:0 24px 60px rgba(0,0,0,0.4); }
+        .project-card:hover::before { opacity:1; }
+
+        .project-icon {
+            width:52px; height:52px; border-radius:12px;
+            background: var(--red-dim); border: 1px solid rgba(255,0,79,0.25);
+            display:flex; align-items:center; justify-content:center;
+            font-size:1.4rem; color:var(--red); margin-bottom:24px; flex-shrink:0;
+        }
+        .project-name {
+            font-family:'Syne',sans-serif; font-size:1.2rem; font-weight:700; color:var(--white); margin-bottom:12px;
+        }
+        .project-desc { color:var(--muted); font-size:0.9rem; line-height:1.7; flex:1; }
+        .project-tags {
+            display:flex; flex-wrap:wrap; gap:8px; margin-top:20px;
+        }
+        .tag {
+            background: var(--surface); color: var(--muted);
+            font-size:0.75rem; padding:4px 12px; border-radius:100px;
+            border: 1px solid var(--border);
+        }
+        .project-link {
+            display:inline-flex; align-items:center; gap:6px; margin-top:20px;
+            color: var(--red); font-size:0.85rem; text-decoration:none; font-weight:500;
+            transition: gap 0.25s;
+        }
+        .project-link:hover { gap:10px; }
+
+        /* ── Skills section ── */
+        #skills { background: var(--bg); }
+        .skills-categories {
+            display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:24px;
+        }
+        .skill-cat {
+            background: var(--surface); border: 1px solid var(--border); border-radius:12px; padding:28px;
+        }
+        .skill-cat-title {
+            font-family:'Syne',sans-serif; font-weight:700; font-size:0.95rem;
+            color:var(--white); margin-bottom:16px; text-transform:uppercase; letter-spacing:0.06em;
+            display:flex; align-items:center; gap:10px;
+        }
+        .skill-cat-title i { color: var(--red); }
+        .skill-tags { display:flex; flex-wrap:wrap; gap:8px; }
+        .skill-tags span {
+            background: var(--bg); border: 1px solid var(--border);
+            color: var(--muted); font-size:0.82rem; padding:5px 13px; border-radius:6px;
+            transition: all 0.25s;
+        }
+        .skill-tags span:hover { color:var(--white); border-color: rgba(255,0,79,0.4); }
+
+        /* ── Achievements ── */
+        #achievements { background: var(--bg2); }
+        .achievements-grid {
+            display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:20px;
+        }
+        .achievement-card {
+            background: var(--bg3); border: 1px solid var(--border); border-radius:12px;
+            padding:28px; text-align:center; transition: all 0.3s;
+        }
+        .achievement-card:hover { border-color: rgba(255,0,79,0.4); transform:translateY(-4px); }
+        .achievement-icon { font-size:2rem; margin-bottom:16px; }
+        .achievement-title {
+            font-family:'Syne',sans-serif; font-weight:700; color:var(--white); margin-bottom:6px;
+        }
+        .achievement-sub { color: var(--muted); font-size:0.85rem; }
+
+        /* ── Education ── */
+        #education { background: var(--bg); }
+        .edu-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:20px; }
+        .edu-card {
+            background: var(--surface); border: 1px solid var(--border); border-radius:12px;
+            padding:28px; transition: all 0.3s;
+        }
+        .edu-card:hover { border-color: rgba(255,0,79,0.3); }
+        .edu-degree {
+            font-family:'Syne',sans-serif; font-weight:700; color:var(--white); margin-bottom:6px;
+        }
+        .edu-school { color: var(--muted); font-size:0.9rem; margin-bottom:12px; }
+        .edu-meta { display:flex; gap:16px; }
+        .edu-badge {
+            background: var(--red-dim); color:var(--red); border: 1px solid rgba(255,0,79,0.25);
+            font-size:0.78rem; padding:4px 12px; border-radius:100px; font-weight:500;
+        }
+
+        /* ── Contact ── */
+        #contact { background: var(--bg2); }
+        .contact-grid { display:grid; grid-template-columns: 1fr 1.4fr; gap:64px; }
+        .contact-info h3 {
+            font-family:'Syne',sans-serif; font-size:1.6rem; font-weight:800; color:var(--white); margin-bottom:16px;
+        }
+        .contact-info p { color:var(--muted); line-height:1.7; margin-bottom:32px; }
+        .contact-item {
+            display:flex; align-items:center; gap:14px; margin-bottom:20px;
+        }
+        .contact-item-icon {
+            width:42px; height:42px; background:var(--red-dim); border:1px solid rgba(255,0,79,0.25);
+            border-radius:10px; display:flex; align-items:center; justify-content:center;
+            color:var(--red); font-size:0.9rem; flex-shrink:0;
+        }
+        .contact-item-text small { display:block; color:var(--muted); font-size:0.78rem; }
+        .contact-item-text a { color:var(--text); text-decoration:none; font-size:0.95rem; }
+
+        .socials { display:flex; gap:12px; margin-top:32px; }
+        .social-btn {
+            width:44px; height:44px; border-radius:10px;
+            border: 1px solid var(--border); background: var(--surface);
+            display:flex; align-items:center; justify-content:center;
+            color:var(--muted); text-decoration:none; font-size:1rem;
+            transition: all 0.25s;
+        }
+        .social-btn:hover { border-color: var(--red); color:var(--red); transform:translateY(-3px); }
+
+        .contact-form { display:flex; flex-direction:column; gap:16px; }
+        .form-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+        .form-group label { display:block; color:var(--muted); font-size:0.8rem; margin-bottom:8px; letter-spacing:0.05em; text-transform:uppercase; }
+        .form-group input, .form-group textarea {
+            width:100%; background:var(--surface); border:1px solid var(--border);
+            border-radius:8px; padding:14px 16px; color:var(--white);
+            font-family:'DM Sans',sans-serif; font-size:0.95rem; outline:none;
+            transition: border-color 0.25s;
+        }
+        .form-group input:focus, .form-group textarea:focus { border-color: rgba(255,0,79,0.5); }
+        .form-group textarea { resize:vertical; min-height:130px; }
+
+        /* ── Footer ── */
+        footer {
+            background: var(--bg); border-top: 1px solid var(--border);
+            padding: 32px 6%; display:flex; justify-content:space-between; align-items:center;
+            flex-wrap:wrap; gap:16px;
+        }
+        footer p { color:var(--muted); font-size:0.85rem; }
+        footer .footer-brand { font-family:'Syne',sans-serif; font-weight:800; color:var(--white); }
+        footer .footer-brand span { color:var(--red); }
+
+        /* ── Scroll reveal ── */
+        .reveal { opacity:0; transform:translateY(30px); transition: all 0.7s ease; }
+        .reveal.visible { opacity:1; transform:translateY(0); }
+
+        /* ── Responsive ── */
+        @media(max-width:900px) {
+            .about-grid, .contact-grid { grid-template-columns:1fr; }
+            .form-row { grid-template-columns:1fr; }
+            .about-tag-float { bottom:-12px; right:12px; }
+            nav ul { gap:20px; }
+        }
+        @media(max-width:640px) {
+            nav ul { display:none; }
+            .hero-stats { gap:28px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav>
+    <div class="nav-logo">SHRI<span>.</span></div>
+    <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+        <div class="hero-badge">Available for opportunities</div>
+        <h1 class="hero-name">Shrikant<br><span class="red">Deshmukh.</span></h1>
+        <p class="hero-sub">Software Engineer building scalable backend systems, clean REST APIs, and beautiful frontends. Currently shaping production software at <strong style="color:var(--white)">Quorum Software</strong>.</p>
+        <div class="hero-actions">
+            <a href="Shrikant-Deshmukh-8080250276-2.pdf" download class="btn-primary"><i class="fa-solid fa-download"></i> Download CV</a>
+            <a href="#contact" class="btn-secondary"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+        </div>
+        <div class="hero-stats">
+            <div>
+                <div class="stat-num">85<span>%</span></div>
+                <div class="stat-label">DB storage reduced</div>
+            </div>
+            <div>
+                <div class="stat-num">6<span>×</span></div>
+                <div class="stat-label">Faster backup/restore</div>
+            </div>
+            <div>
+                <div class="stat-num">100<span>+</span></div>
+                <div class="stat-label">Days LeetCode streak</div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll">
+        <div class="scroll-line"></div>
+        scroll
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="section-tag">Who I am</div>
+    <div class="section-title">About Me</div>
+    <div class="about-grid">
+        <div class="about-img-wrap reveal">
+            <img src="shri2.jpg" alt="Shrikant Deshmukh">
+            <div class="about-tag-float">
+                CSE Graduate<br><small>ICEM, Pune — SGPA 8.28</small>
+            </div>
+        </div>
+        <div class="about-text reveal">
+            <p>I'm a Software Engineer with a strong grip on backend development — building microservices, RESTful APIs, and handling real production systems. I've worked with <strong style="color:var(--white)">C#, .NET, Blazor, Java, Spring Boot</strong> and know my way around PostgreSQL and AWS.</p>
+            <p>At Quorum Software, I've gone from a final-year project student to a full intern — migrating document storage to AWS S3, cutting database storage by 85%, and achieving the highest ticket resolution rate in the team. I'm passionate about clean code, solid architecture, and shipping things that work.</p>
+            <p>When I'm not coding, I'm probably on the football field or grinding DSA problems on LeetCode.</p>
+            <div class="skills-grid">
+                <div class="skill-pill"><i class="fa-brands fa-microsoft"></i> .NET / C# / Blazor</div>
+                <div class="skill-pill"><i class="fa-brands fa-java"></i> Java / Spring Boot</div>
+                <div class="skill-pill"><i class="fa-solid fa-database"></i> PostgreSQL / MySQL</div>
+                <div class="skill-pill"><i class="fa-brands fa-aws"></i> AWS S3</div>
+                <div class="skill-pill"><i class="fa-solid fa-code-branch"></i> REST APIs / Microservices</div>
+                <div class="skill-pill"><i class="fa-brands fa-react"></i> React / Tailwind CSS</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+    <div class="section-tag">Where I've worked</div>
+    <div class="section-title">Experience</div>
+    <div class="exp-timeline">
+        <div class="exp-item active reveal">
+            <div class="exp-period">Apr 2025 — Present</div>
+            <div class="exp-role">Software Engineer (Intern)</div>
+            <div class="exp-company">Quorum Software, Pune</div>
+            <ul class="exp-points">
+                <li>Migrated document storage to AWS S3, implementing CRUD across 3 environments — reduced database storage by <strong style="color:var(--white)">85%</strong> and backup time from 1 hour to 10 minutes.</li>
+                <li>Built Person Summary module and REST APIs using <strong style="color:var(--white)">C# / .NET Framework + Blazor</strong> with optimized PostgreSQL queries.</li>
+                <li>Achieved the <strong style="color:var(--white)">highest ticket resolution rate</strong> in the team resolving live production issues.</li>
+                <li>Collaborated in Agile Scrum — sprint planning, daily standups, code reviews via <strong style="color:var(--white)">Jira & Bitbucket</strong>.</li>
+            </ul>
+        </div>
+        <div class="exp-item reveal">
+            <div class="exp-period">Oct 2024 — Mar 2025</div>
+            <div class="exp-role">Project Student (B.E. Final Year)</div>
+            <div class="exp-company">Quorum Software, Pune</div>
+            <ul class="exp-points">
+                <li>Owned a core microservice connected to multiple services — created and restructured REST APIs for better maintainability.</li>
+                <li>Architected dual-token <strong style="color:var(--white)">JWT authentication & OAuth2 authorization</strong> using .NET 8.</li>
+                <li>Developed backend features and UI pages using <strong style="color:var(--white)">C# and Blazor</strong>.</li>
+            </ul>
+        </div>
+        <div class="exp-item reveal">
+            <div class="exp-period">2023 (1 month)</div>
+            <div class="exp-role">Software Developer Intern</div>
+            <div class="exp-company">MotionCut</div>
+            <ul class="exp-points">
+                <li>Delivered Expense Tracker, Link Shortener, and Game projects within one month.</li>
+            </ul>
+        </div>
+        <div class="exp-item reveal">
+            <div class="exp-period">2023</div>
+            <div class="exp-role">Web Developer Intern</div>
+            <div class="exp-company">CodSoft</div>
+            <ul class="exp-points">
+                <li>Created dynamic websites and worked on live client projects using HTML, CSS, JavaScript.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <div class="section-tag">What I've built</div>
+    <div class="section-title">Projects</div>
+    <div class="projects-grid">
+        <div class="project-card reveal">
+            <div class="project-icon"><i class="fa-solid fa-robot"></i></div>
+            <div class="project-name">META-AI</div>
+            <div class="project-desc">A full-stack platform integrating multiple AI services into a single interface — enabling unified search and real-time side-by-side result comparison across providers.</div>
+            <div class="project-tags">
+                <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">React</span><span class="tag">TailwindCSS</span><span class="tag">REST APIs</span>
+            </div>
+            <a href="https://github.com/shrikant48" class="project-link">View on GitHub <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="project-card reveal">
+            <div class="project-icon"><i class="fa-solid fa-plane-departure"></i></div>
+            <div class="project-name">Toureasta</div>
+            <div class="project-desc">A responsive travel platform with weather insights, hotel search, expense tracking, currency conversion, and language translation — all in one place.</div>
+            <div class="project-tags">
+                <span class="tag">HTML5</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Bootstrap</span><span class="tag">APIs</span>
+            </div>
+            <a href="https://shrikant48.github.io/Toureasta/" class="project-link">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="project-card reveal">
+            <div class="project-icon"><i class="fa-solid fa-truck-medical"></i></div>
+            <div class="project-name">Smart Ambulance System</div>
+            <div class="project-desc">Real-time ambulance dispatch system using Java and AI algorithms — reduced response time by 30% with automated location detection and hospital routing.</div>
+            <div class="project-tags">
+                <span class="tag">Java</span><span class="tag">AI Algorithms</span><span class="tag">HTML</span><span class="tag">Tailwind CSS</span>
+            </div>
+            <a href="https://github.com/shrikant48" class="project-link">View on GitHub <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="project-card reveal">
+            <div class="project-icon"><i class="fa-solid fa-dollar-sign"></i></div>
+            <div class="project-name">Currency Converter</div>
+            <div class="project-desc">A responsive currency converter supporting 158+ countries with real-time exchange rates, built with a clean and intuitive UI.</div>
+            <div class="project-tags">
+                <span class="tag">JavaScript</span><span class="tag">HTML5</span><span class="tag">CSS</span><span class="tag">Exchange API</span>
+            </div>
+            <a href="https://shrikant48.github.io/Currency-Converter/" class="project-link">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="project-card reveal">
+            <div class="project-icon"><i class="fa-solid fa-gamepad"></i></div>
+            <div class="project-name">Tic Tac Toe</div>
+            <div class="project-desc">Fully responsive Tic Tac Toe game with clean gameplay logic and a modern interface.</div>
+            <div class="project-tags">
+                <span class="tag">HTML5</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+            <a href="https://shrikant48.github.io/Tik-Tak-Toe/" class="project-link">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="project-card reveal">
+            <div class="project-icon"><i class="fa-solid fa-dumbbell"></i></div>
+            <div class="project-name">GODGYM Landing Page</div>
+            <div class="project-desc">A modern gym landing page showcasing timings, pricing, and facilities with a bold visual design.</div>
+            <div class="project-tags">
+                <span class="tag">HTML5</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+            <a href="https://shrikant48.github.io/Gym-Landing-Page/" class="project-link">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+    <div style="text-align:center; margin-top:48px;">
+        <a href="https://github.com/shrikant48" class="btn-secondary" target="_blank" style="display:inline-flex; align-items:center; gap:10px;"><i class="fa-brands fa-github"></i> More on GitHub</a>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <div class="section-tag">Technical toolkit</div>
+    <div class="section-title">Skills</div>
+    <div class="skills-categories">
+        <div class="skill-cat reveal">
+            <div class="skill-cat-title"><i class="fa-solid fa-code"></i> Languages</div>
+            <div class="skill-tags">
+                <span>C#</span><span>Java</span><span>SQL</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Python</span>
+            </div>
+        </div>
+        <div class="skill-cat reveal">
+            <div class="skill-cat-title"><i class="fa-solid fa-layer-group"></i> Frameworks</div>
+            <div class="skill-tags">
+                <span>.NET Framework</span><span>.NET 8</span><span>ASP.NET MVC</span><span>Blazor</span><span>Spring Boot</span><span>React</span><span>Bootstrap</span><span>Tailwind</span>
+            </div>
+        </div>
+        <div class="skill-cat reveal">
+            <div class="skill-cat-title"><i class="fa-solid fa-server"></i> Backend & APIs</div>
+            <div class="skill-tags">
+                <span>RESTful APIs</span><span>Microservices</span><span>OAuth2</span><span>JWT Auth</span><span>Dependency Injection</span><span>Middleware</span>
+            </div>
+        </div>
+        <div class="skill-cat reveal">
+            <div class="skill-cat-title"><i class="fa-solid fa-database"></i> Databases</div>
+            <div class="skill-tags">
+                <span>PostgreSQL</span><span>MySQL</span><span>Query Optimization</span><span>Indexing</span>
+            </div>
+        </div>
+        <div class="skill-cat reveal">
+            <div class="skill-cat-title"><i class="fa-solid fa-brain"></i> Core Concepts</div>
+            <div class="skill-tags">
+                <span>DSA</span><span>OOP</span><span>SOLID</span><span>Design Patterns</span><span>Multithreading</span>
+            </div>
+        </div>
+        <div class="skill-cat reveal">
+            <div class="skill-cat-title"><i class="fa-solid fa-toolbox"></i> Tools</div>
+            <div class="skill-tags">
+                <span>Git</span><span>Bitbucket</span><span>Jira</span><span>Postman</span><span>IIS</span><span>AWS S3</span><span>Agile/Scrum</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+    <div class="section-tag">Recognition</div>
+    <div class="section-title">Achievements</div>
+    <div class="achievements-grid">
+        <div class="achievement-card reveal">
+            <div class="achievement-icon">🏆</div>
+            <div class="achievement-title">Bug Fixing Winner</div>
+            <div class="achievement-sub">Teckfest 2023, ICEM</div>
+        </div>
+        <div class="achievement-card reveal">
+            <div class="achievement-icon">🥈</div>
+            <div class="achievement-title">Runner Up</div>
+            <div class="achievement-sub">Bug Fixing 2022, Teckfest ICEM</div>
+        </div>
+        <div class="achievement-card reveal">
+            <div class="achievement-icon">💻</div>
+            <div class="achievement-title">100 Days Streak</div>
+            <div class="achievement-sub">LeetCode DSA challenge</div>
+        </div>
+        <div class="achievement-card reveal">
+            <div class="achievement-icon">♟️</div>
+            <div class="achievement-title">Chess — Division Level</div>
+            <div class="achievement-sub">Represented school in inter-division chess</div>
+        </div>
+        <div class="achievement-card reveal">
+            <div class="achievement-icon">🏑</div>
+            <div class="achievement-title">Hockey — State Level</div>
+            <div class="achievement-sub">Represented school in state-level hockey</div>
+        </div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <div class="section-tag">Academics</div>
+    <div class="section-title">Education</div>
+    <div class="edu-grid">
+        <div class="edu-card reveal">
+            <div class="edu-degree">B.E. Computer Science Engineering</div>
+            <div class="edu-school">Indira College of Engineering and Management, Pune (SPPU)</div>
+            <div class="edu-meta">
+                <span class="edu-badge">SGPA 8.28</span>
+                <span class="edu-badge">2021 – 2025</span>
+            </div>
+        </div>
+        <div class="edu-card reveal">
+            <div class="edu-degree">HSC — Science</div>
+            <div class="edu-school">Modern College of Arts, Science & Commerce, Pune</div>
+            <div class="edu-meta">
+                <span class="edu-badge">84.20%</span>
+                <span class="edu-badge">2019 – 2021</span>
+            </div>
+        </div>
+        <div class="edu-card reveal">
+            <div class="edu-degree">SSC</div>
+            <div class="edu-school">Biyani Military School, Nashik</div>
+            <div class="edu-meta">
+                <span class="edu-badge">86.20%</span>
+                <span class="edu-badge">2018</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="section-tag">Let's talk</div>
+    <div class="section-title">Contact Me</div>
+    <div class="contact-grid">
+        <div class="contact-info reveal">
+            <h3>Got a project or opportunity?</h3>
+            <p>I'm open to full-time roles, internships, and interesting side projects. Drop me a message and I'll get back to you quickly.</p>
+            <div class="contact-item">
+                <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-item-text">
+                    <small>Email</small>
+                    <a href="mailto:shreed2002@gmail.com">shreed2002@gmail.com</a>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="contact-item-text">
+                    <small>Phone</small>
+                    <a href="tel:+918080250276">(+91) 8080250276</a>
+                </div>
+            </div>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/deshmukhshrikant" class="social-btn" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/shrikant48" class="social-btn" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/deshmukhsofficial" class="social-btn" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/SHRID48" class="social-btn" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.threads.net/@deshmukhsofficial" class="social-btn" target="_blank"><i class="fa-brands fa-threads"></i></a>
+            </div>
+        </div>
+        <div class="reveal">
+            <form class="contact-form" action="/submit" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" name="Name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea name="Message" placeholder="Tell me about your project or opportunity..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width:fit-content; cursor:none;">
+                    <i class="fa-solid fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
-    <p>&copy; <span id="year"></span> SHRI. All rights reserved.</p>
-    <p>Designed by SHRI.</p>
-    <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+    <div class="footer-brand">SHRI<span>.</span></div>
+    <p>&copy; <span id="year"></span> Shrikant Deshmukh. All rights reserved.</p>
+    <p style="color:var(--muted); font-size:0.8rem;">Designed & Built by Shrikant</p>
 </footer>
 
+<script>
+    // Cursor
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursorRing');
+    let mx=0, my=0, rx=0, ry=0;
+    document.addEventListener('mousemove', e => { mx=e.clientX; my=e.clientY; cursor.style.left=mx+'px'; cursor.style.top=my+'px'; });
+    (function animateRing(){
+        rx+=(mx-rx)*0.12; ry+=(my-ry)*0.12;
+        ring.style.left=rx+'px'; ring.style.top=ry+'px';
+        requestAnimationFrame(animateRing);
+    })();
+    document.querySelectorAll('a, button, .project-card, .skill-pill, .social-btn').forEach(el => {
+        el.addEventListener('mouseenter', () => { ring.style.transform='translate(-50%,-50%) scale(1.6)'; ring.style.borderColor='rgba(255,0,79,0.8)'; });
+        el.addEventListener('mouseleave', () => { ring.style.transform='translate(-50%,-50%) scale(1)'; ring.style.borderColor='rgba(255,0,79,0.5)'; });
+    });
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach((e, i) => {
+            if(e.isIntersecting){
+                setTimeout(() => e.target.classList.add('visible'), i * 80);
+                observer.unobserve(e.target);
+            }
+        });
+    }, { threshold:0.1 });
+    reveals.forEach(r => observer.observe(r));
+
+    // Nav active highlight
+    const sections = document.querySelectorAll('section[id], #hero');
+    const navLinks = document.querySelectorAll('nav ul a');
+    const scrollSpy = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if(e.isIntersecting){
+                navLinks.forEach(l => l.style.color='');
+                const link = document.querySelector(`nav a[href="#${e.target.id}"]`);
+                if(link) link.style.color='#ffffff';
+            }
+        });
+    }, { threshold:0.4 });
+    sections.forEach(s => scrollSpy.observe(s));
+</script>
+</body>
 </html>
